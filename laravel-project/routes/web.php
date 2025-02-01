@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App/Http/Controller/PosController;
+// use App\Http\Controllers\PosController;
 
-Route::get('/home', function () {
-    return view('home');
+Route::get('/', function () {
+    return view('welcome');
 });
 
-Route::get('/home',[PosControllers :: class, 'show']);
+// Route::get('/', [PosController::class, 'show']);
